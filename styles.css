@@ -11,7 +11,7 @@ body {
   font-family: 'Comfortaa', sans-serif;
   font-size: 15px;
   line-height: 1.5;
-    background-color: darkred;
+background-image: url(sfondo3.jpg)
 }
 img {
   width: 200px;
@@ -50,11 +50,15 @@ h3 {
 
 /* Profile*/
 header {
-  background: brown;
-  color:yellow;
-font-family: 'Acme';
+color: antiquewhite;
+font-family: 'Comfortaa';
     margin: -1%;
     text-align: right;
+    margin-bottom: 50px;
+}
+
+.sfondo  {
+
 }
 
 /*Pictures*/
@@ -75,18 +79,20 @@ font-family: 'Acme';
 /* About */
 .about {
     text-align: left;
+        background: rgba(250, 0, 10, 0.2)
+
 }
 
 
 /* Projects*/
 
 .projects {
-  background: brown;
+
 }
 
 .projects .btn {
   color: darkred;
-  background: yellow;
+
   text-decoration: none;
   padding: 0px;
   border-radius: 4px;
@@ -103,17 +109,45 @@ font-family: 'Acme';
 
 /* Contact Info */
 footer {
-  background: brown;
   color: antiquewhite;
 }
 .contact-list {
     padding: 0;
   list-style-type: none;
+        background-color: white;
+    opacity: 0.5;
+    text-align: center;
 }
 
 .contact-list a {
   padding: 10px;
   display: inline-block;
+}
+
+/*header */
+
+.menubar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.bar {
+  float: left;
+}
+
+.bar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bar a:hover {
+  background-color: #111;
 }
 
 

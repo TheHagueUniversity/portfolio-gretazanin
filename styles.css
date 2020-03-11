@@ -122,9 +122,13 @@ footer {
 .menubar {
   list-style-type: none;
   margin: 0;
+    margin-right: 5%;
+    margin-left: 5%;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+     border-radius: 50px 20px;
+  background-color: rgba(210, 145, 188, 0.3);
+    /* change color with #333 */
 }
 
 .bar {
@@ -132,15 +136,16 @@ footer {
 }
 
 .bar a {
-  display: block;
+display:block;
+    font-weight:800; 
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 120px;
   text-decoration: none;
 }
 
 .bar a:hover {
-  background-color: #111;
+  background-color: rgba(210, 145, 188);
 }
 
 

@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
 }
 
+
 body {
   color:white;
   margin: 0;
@@ -10,7 +11,7 @@ body {
   font-family: 'Comfortaa', sans-serif;
   font-size: 15px;
   line-height: 1.5;
-    background-color: darkolivegreen;
+    background-color: darkred;
 }
 img {
   width: 200px;
@@ -55,6 +56,21 @@ font-family: 'Acme';
     margin: -1%;
     text-align: right;
 }
+
+/*Pictures*/
+.gretapicture {
+    float: left;
+    margin: 5%;
+        margin-top: 8%;
+
+}
+
+.gretadrawing {
+    width: 300px;
+    float: right;
+    margin-top: 5%;
+}
+
 
 /* About */
 .about {

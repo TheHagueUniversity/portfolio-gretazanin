@@ -1,6 +1,6 @@
-/*html {
+html {
   box-sizing: border-box;
-}*/
+}
 
 
 body {
@@ -160,6 +160,8 @@ header {
 
 #text {
     background: rgba(255, 0, 10, 0.25);
+    padding: 1.5%;
+    text-align: left;
 }
 
 .projectImg {
@@ -191,15 +193,15 @@ header {
     text-align: center;
     background-color:rgba(255, 0, 10, 0.15); 
     font-weight: 700;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0 ;
+    padding-right: 5px;
+        margin-left: 8px;
 }
 
 .container img {
     padding-left: 5px;
     padding-right: 5px;
     display: block;
-    margin: 0 auto;
 }
 
 
@@ -247,6 +249,7 @@ header {
 .education {
     display: block;
  margin-top: 20%;
+    padding-top: 2%;x
 }
 
 /* Contact Info */
@@ -293,7 +296,7 @@ footer {
     font-weight: 800;
     color: white;
     text-align: center;
-    padding: 14px 120px;
+    padding: 14px 110px;
     text-decoration: none;
 }
 
@@ -304,7 +307,25 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ILLUSTRATION PAGE */
+
+
 
 /* gallery */
 
@@ -339,4 +360,16 @@ footer {
         margin-top: 9%;
         
     }
+
+
+
+
+
+
+
+
+
+
+
+
 

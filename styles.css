@@ -98,22 +98,25 @@ header {
 /*Pictures*/
 .gretapicture {
     float: left;
-    margin: 5%;
-    margin-top: 9%;
+    width: 275px;
+    margin: 1%;
+    margin-top: 8%;
 
 }
 
 .gretadrawing {
     width: 300px;
     float: right;
-    margin-top: 6%;
+    margin-top: 4%;
+    margin-left: 1%;
 }
 
 
 /* About */
 .about {
     text-align: left;
-    background: rgba(250, 0, 10, 0.2)
+    background: rgba(250, 0, 10, 0.2);
+    text-align: justify;
 }
 
 
@@ -336,6 +339,51 @@ footer {
     margin-top: -150px;
 }
 
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+/*
 .column {
     float: left;
     width: 15%;
@@ -345,8 +393,7 @@ footer {
     display: inline-block;
     margin-top: 8%;
 }
-
-/* Style the images inside the grid */
+Style the images inside the grid 
 .column img {
     opacity: 0.8;
     cursor: pointer;
@@ -360,7 +407,7 @@ footer {
     margin-left: 41%;
     margin-top: 9%;
 
-}
+} */
 
 
 
@@ -475,7 +522,7 @@ footer {
 .video {
     float: right;
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 20px;
     
 }
 
@@ -483,15 +530,28 @@ footer {
     margin-top: 25px;
 }
 
+.marginBottom {
+    margin-bottom: 0px;
+}
+
 /*Project page footer image*/
 
 .imageWide {
+    
     width: 100%;
     display: block;
     height: 270px;
-    background-image: url(images/bepwide.jpg);
-    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.8;    
+    opacity: 0.7;    
+}
+
+#footerBep {
+        background-image: url(images/bepwide.jpg);
+    background-position: bottom;
+}
+
+#footerAbc {
+    background-image: url(images/abcwide.jpg);
+    background-position:top;
 }

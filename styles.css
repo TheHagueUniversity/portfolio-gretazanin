@@ -425,9 +425,9 @@ footer {
 }
 
 #arrow:hover {
-    -webkit-transform: rotateZ(-5deg);
-    -ms-transform: rotateZ(-5deg);
-    transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-6deg);
+    -ms-transform: rotateZ(-6deg);
+    transform: rotateZ(-6deg);
 }
 
 .sideImg {
@@ -481,4 +481,17 @@ footer {
 
 .marginTop {
     margin-top: 25px;
+}
+
+/*Project page footer image*/
+
+.imageWide {
+    width: 100%;
+    display: block;
+    height: 270px;
+    background-image: url(images/bepwide.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;    
 }

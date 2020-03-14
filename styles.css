@@ -1,3 +1,10 @@
+
+/*In this style sheet there are three main sections: Index, which contains also general rules for all the other sections,
+then Illustration section, which contains images grid, and lastly Project Pages, which have recurrent patterns. 
+
+One note, to reach the illustration page click on the tiny image next to my name. After getting Alex's feedback, I decided 
+to add a hover effect to make it clearer that it needs to be clicked on, so I added a grow hover effect'*/
+
 html {
      scroll-behavior: smooth;
 }
@@ -14,7 +21,6 @@ body {
     background-repeat: no-repeat;
 
     background-position: top;
-
 }
 
 img {
@@ -60,7 +66,7 @@ h3 {
 
 
 
-/* Profile*/
+/*HEADER*/
 header {
     color: antiquewhite;
     font-family: 'Comfortaa';
@@ -75,6 +81,8 @@ header {
     display: inline-block;
     margin-left: 1%;
 }
+
+/* Hover effect for "logo" to get to illustration page */
 
 #grow {
     opacity: 0.7;
@@ -91,11 +99,53 @@ header {
 }
 
 
+/* NAVBAR. I want it to be thin but wide, and to have asymmetrical edges using border-radius */
+
+.menubar {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 3.2%;
+    margin-right: 2%;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 50px 20px;
+    background-color: rgba(210, 145, 188, 0.3);
+
+
+}
+
+.bar {
+    float: left;
+    width: 225px;
+
+}
+
+.bar a {
+    display: block;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 14px 110px;
+    text-decoration: none;
+}
+
+.bar a:hover {
+    background-color: rgba(210, 145, 188);
+}
 
 
 
 
-/*Pictures*/
+
+/* About */
+.about {
+    text-align: left;
+    background: rgba(250, 0, 10, 0.2);
+    text-align: justify;
+}
+
+
+/*About me Pictures*/
 .gretapicture {
     float: left;
     width: 275px;
@@ -112,44 +162,7 @@ header {
 }
 
 
-/* About */
-.about {
-    text-align: left;
-    background: rgba(250, 0, 10, 0.2);
-    text-align: justify;
-}
-
-
-/* First Button */
-
-.myButton {
-    box-shadow: inset 0px 1px 0px 0px #ffffff;
-    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-    background-color: #ededed;
-    border-radius: 6px;
-    border: 1px solid #dcdcdc;
-    display: inline-block;
-    cursor: pointer;
-    color: #777777;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #ffffff;
-}
-
-.myButton:hover {
-    background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-    background-color: #dfdfdf;
-}
-
-.myButton:active {
-    position: relative;
-    top: 1px;
-}
-
-/* Projects */
+/* Projects section */
 
 .coso {
     background: rgba(255, 0, 10, 0.25);
@@ -220,8 +233,6 @@ footer {
 }
 
 
-
-
 .contact-list {
     list-style-type: none;
 }
@@ -247,51 +258,6 @@ footer {
   
 }
 
-/*header */
-
-.menubar {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 50px 20px;
-    background-color: rgba(210, 145, 188, 0.3);
-    /* change color with #333 */
-
-
-
-}
-
-.bar {
-    float: left;
-    width: 200px;
-
-}
-
-.bar a {
-    display: block;
-    font-weight: 800;
-    color: white;
-    text-align: center;
-    padding: 14px 110px;
-    text-decoration: none;
-}
-
-.bar a:hover {
-    background-color: rgba(210, 145, 188);
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -308,14 +274,13 @@ footer {
 
 /* gallery */
 
-/* The grid: Four equal columns that floats next to each other */
 
 .gallery {
     margin-top: -150px;
     margin-left: 15%;
 }
 
-
+/*using flexbox to build my grid*/
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +300,7 @@ footer {
   width: 100%;
 }
 
-Style the images inside the grid 
+
 .column img {
     opacity: 0.8;
     cursor: pointer;
@@ -344,6 +309,23 @@ Style the images inside the grid
 .column img:hover {
     opacity: 1;
 }
+/* MAKE THE GRID RESPONSIVE: the more you reduce the size of the page the least number of rows you'll see */
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*INSERT MY GIF AS FOOTER*/
 
 #footerIllu {
         background-image: url(images/Illustrations/16.gif);
@@ -354,7 +336,7 @@ Style the images inside the grid
 
 
 
-/*PROJECT PAGE*/
+/*PROJECT PAGE general features for all project pages*/
 
 .titleProject {
     font-weight: 500;
@@ -377,6 +359,8 @@ Style the images inside the grid
     background-color: rgba(210, 145, 188, 0.3);
 }
 
+/* Project Pages have the same header, but smaller, to give more importance to the content of the page */
+
 #projectHeader {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -394,6 +378,9 @@ Style the images inside the grid
 .projectTopImg {
     width: 100px;
 }
+
+/* arrow to go back to homepage is a pizza icon made by me. 
+It will stay fixed on the left so you can still go back without scrolling to the top */
 
 #arrow {
     position: fixed;
@@ -421,7 +408,7 @@ Style the images inside the grid
 
 
 
-/* PROJECT GALLERY */
+/* PROJECT GALLERY for all the pictures I want to show */
 
 .galleryProject {
     display: flex;
@@ -444,11 +431,12 @@ Style the images inside the grid
             margin-top:5px; 
             float: right;
         } */
+
 .image:hover {
     opacity: 0.5;
 }
 
-/*video*/
+/*video only for BEP project*/
 
 .video {
     float: right;
@@ -456,6 +444,7 @@ Style the images inside the grid
     padding-left: 20px;
     
 }
+/* This is to reduce the use of <BR>. I mainly use it for <p> */
 
 .marginTop {
     margin-top: 25px;
@@ -503,6 +492,8 @@ Style the images inside the grid
     background-size: cover;
     opacity: 0.7;    
 }
+
+/* specific footer images for every page */
 
 #footerBep {
         background-image: url(images/bepwide.jpg);

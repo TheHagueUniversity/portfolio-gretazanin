@@ -225,7 +225,12 @@ header {
     padding-top: 2%;
 }
 
+/*WORK EXPERIENCE*/
 
+.cv {
+    margin-top: -2%;
+    width: 300px;
+}
 
 /* Contact Info */
 footer {
@@ -257,12 +262,6 @@ footer {
     width: 23%;
   
 }
-
-
-
-
-
-
 
 
 
@@ -300,15 +299,6 @@ footer {
   width: 100%;
 }
 
-
-.column img {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.column img:hover {
-    opacity: 1;
-}
 /* MAKE THE GRID RESPONSIVE: the more you reduce the size of the page the least number of rows you'll see */
 
 @media screen and (max-width: 800px) {
@@ -328,7 +318,7 @@ footer {
 /*INSERT MY GIF AS FOOTER*/
 
 #footerIllu {
-        background-image: url(images/Illustrations/16.gif);
+        background-image: url(images/homewide.jpg);
     background-position: bottom;
     margin-top: 50px;
 }

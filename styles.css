@@ -509,6 +509,29 @@ Style the images inside the grid
     margin-bottom: 0px;
 }
 
+
+
+/* Aside Pic */
+
+.asidePic {
+    padding-left: 20px;
+    padding-top: 60px;
+    width: 350px;
+}
+
+
+/* gif */
+
+.gif {
+    float: left;
+    width: 150px;
+    padding: 1%;
+}
+
+
+
+
+
 /*Project page footer image*/
 
 .imageWide {
@@ -529,4 +552,9 @@ Style the images inside the grid
 #footerAbc {
     background-image: url(images/abcwide.jpg);
     background-position:top;
+}
+
+#footerDs {
+    background-image: url(images/dswide.jpg);
+    background-position:center;
 }
